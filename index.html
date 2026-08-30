@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Luna &amp; Nova Show. Live AI talk show, every day</title>
+<meta name="description" content="Two sisters. One mic. A live AI talk show covering real headlines every day, noon to midnight ET. Opinions nobody asked for.">
+<meta property="og:title" content="The Luna &amp; Nova Show">
+<meta property="og:description" content="Live, interactive AI talk show. Every day, noon to midnight ET. Opinions nobody asked for.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lunanovashow.com">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%99%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Monoton&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e1422; --panel:#151d30; --line:#26314b;
+    --text:#dbe3f2; --muted:#8b98b4;
+    --neon:#7dffb3; --pink:#ff7da9; --amber:#e8a24a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:'Archivo',system-ui,sans-serif;line-height:1.6}
+  a{color:var(--neon);text-decoration:none}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+  header{padding:18px 0;border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .brand{font-weight:800;letter-spacing:.06em;font-size:1.05rem}
+  .brand .amp{color:var(--pink)}
+  nav{display:flex;gap:22px;font-size:.95rem}
+  nav a{color:var(--muted)}
+  nav a:hover,nav a.active{color:var(--text)}
+
+  .hero{padding:84px 0 60px;text-align:center;
+    background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(125,255,179,.07),transparent 70%)}
+  .neon{font-family:'Monoton',cursive;font-weight:400;font-size:clamp(2.2rem,7vw,4.4rem);
+    color:var(--neon);letter-spacing:.08em;
+    text-shadow:0 0 18px rgba(125,255,179,.45),0 0 60px rgba(125,255,179,.18)}
+  .neon .amp{color:var(--pink);text-shadow:0 0 18px rgba(255,125,169,.5),0 0 60px rgba(255,125,169,.2)}
+  .tag{margin-top:18px;font-size:1.25rem;color:var(--text);font-weight:600}
+  .sub{margin-top:10px;color:var(--muted);font-size:1.02rem}
+  .sub b{color:var(--text);font-weight:600}
+  .ai-note{display:inline-block;margin-top:22px;padding:6px 14px;border:1px solid var(--line);
+    border-radius:999px;color:var(--muted);font-size:.85rem;letter-spacing:.04em}
+
+  .cta{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 26px;border-radius:10px;font-weight:600;font-size:1rem;
+    border:1px solid var(--line);color:var(--text);transition:transform .12s ease,border-color .12s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.twitch{background:#9146ff;border-color:#9146ff;color:#fff}
+  .btn.yt{background:#e11; border-color:#e11;color:#fff}
+
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.5rem;font-weight:800;margin-bottom:18px;letter-spacing:.02em}
+  h2 .dot{color:var(--pink)}
+  p.lead{color:var(--muted);max-width:640px}
+
+  .cards{margin-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .card h3{font-size:1.05rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .card .who{color:var(--amber);font-size:.85rem;letter-spacing:.05em;text-transform:uppercase}
+
+  .schedule{display:flex;gap:26px;flex-wrap:wrap;margin-top:16px}
+  .slot{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 24px;min-width:220px}
+  .slot .zone{color:var(--muted);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+  .slot .time{font-size:1.35rem;font-weight:800;margin-top:4px}
+  .slot .days{color:var(--muted);font-size:.9rem;margin-top:2px}
+
+  .socials{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
+  .soc{padding:11px 20px;border:1px solid var(--line);border-radius:10px;color:var(--text);font-weight:600;font-size:.95rem}
+  .soc:hover{border-color:var(--neon)}
+  .soc span{color:var(--muted);font-weight:400;margin-left:6px;font-size:.85rem}
+
+  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:var(--muted)}
+  footer a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">LUNA <span class="amp">&amp;</span> NOVA</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About the show</a>
+      <a href="mailto:contact@lunanovashow.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="neon">LUNA <span class="amp">&amp;</span> NOVA</div>
+    <div class="tag">Two sisters. One mic. Twelve hours of live talk, every single day.</div>
+    <div class="sub">A live talk show about whatever the world is talking about today.<br>
+      <b>Opinions nobody asked for.</b></div>
+    <div class="ai-note">The hosts are AI. The headlines are real.</div>
+    <div class="cta">
+      <a class="btn twitch" href="https://twitch.tv/thelunaandnovashow">Watch live on Twitch</a>
+      <a class="btn yt" href="https://www.youtube.com/@thelunaandnovashow">Watch live on YouTube</a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Meet the hosts<span class="dot">.</span></h2>
+    <p class="lead">Luna and Nova are sisters sharing a New York apartment, a desk, and one microphone. They read the same headlines you do. They just have more to say about them.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="who">Luna</div>
+        <h3>The one with the theories</h3>
+        <p>Big picture thinker. Will connect a tennis match, a movie trailer and a demon dog into one grand theory before the commercial break that this show does not have.</p>
+      </div>
+      <div class="card">
+        <div class="who">Nova</div>
+        <h3>The one with the eyebrow</h3>
+        <p>Hears her sister out, then asks the one question that takes the whole theory apart. Keeps the show, and Luna, somewhere near planet Earth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>When to watch<span class="dot">.</span></h2>
+    <div class="schedule">
+      <div class="slot">
+        <div class="zone">US Eastern</div>
+        <div class="time">12:00 PM to 12:00 AM</div>
+        <div class="days">Live, every day</div>
+      </div>
+      <div class="slot">
+        <div class="zone">Central Europe</div>
+        <div class="time">18:00 to 06:00</div>
+        <div class="days">Live, every day</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Clips and highlights<span class="dot">.</span></h2>
+    <p class="lead">The best moments of every show, cut down to a minute. New clips daily.</p>
+    <div class="socials">
+      <a class="soc" href="https://www.tiktok.com/@the_luna_and_nova_show">TikTok<span>@the_luna_and_nova_show</span></a>
+      <a class="soc" href="https://www.instagram.com/thelunaandnovashow">Instagram<span>@thelunaandnovashow</span></a>
+      <a class="soc" href="https://www.youtube.com/@thelunaandnovashow">YouTube Shorts<span>@thelunaandnovashow</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>The Luna &amp; Nova Show</div>
+    <div><a href="about.html">About the show</a> &nbsp;&middot;&nbsp; <a href="privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:contact@lunanovashow.com">contact@lunanovashow.com</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
